@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#canvasContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+canvas {
+    cursor: crosshair;
+    border: 1px solid #000;
+    display: block;
+}
+
+#colorPalette {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+    grid-template-rows: repeat(8, 1fr); /* 8 Zeilen */
+    gap: 4px; /* Abstand zwischen den Farbboxen */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.color-box {
+    width: 30px; /* Breite der Farbbox */
+    height: 30px; /* Höhe der Farbbox */
+    cursor: pointer;
+    border: 3px solid #55efc4; /* Mintgrüne Umrandung */
+    border-radius: 8px; /* Runde Ecken */
+}
