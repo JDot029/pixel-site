@@ -12,6 +12,8 @@ How to configure an run  (Windows / Linux):
 
 -> To start the server, open terminal and type: ```node server.js```. Then the server will be opened at the port 3000
 
+-> Now you can open your browser at: https://localhost:3000 to use the page
+
 -> The port can be changed in the ```.\server.js```:
 
 ```
